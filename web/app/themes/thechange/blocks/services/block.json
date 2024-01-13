@@ -1,0 +1,17 @@
+{
+    "name": "services",
+    "title": "Diensten",
+    "description": "Veld voor het toevoegen van diensten",
+    "category": "regular",
+    "icon": "align-pull-right",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_services"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

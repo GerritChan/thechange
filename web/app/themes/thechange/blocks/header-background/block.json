@@ -1,0 +1,17 @@
+{
+    "name": "header-background",
+    "title": "Header Background",
+    "description": "Veld voor de header bubbel",
+    "category": "regular",
+    "icon": "editor-alignleft",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_header_background"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "header-bubble",
+    "title": "Header Bubbel",
+    "description": "Veld voor de header bubbel",
+    "category": "regular",
+    "icon": "editor-alignleft",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_header_bubble"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

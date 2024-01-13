@@ -1,0 +1,17 @@
+{
+    "name": "subjects",
+    "title": "Onderwerpen",
+    "description": "Onderwerp buttons",
+    "category": "regular",
+    "icon": "ellipsis",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_subjects"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

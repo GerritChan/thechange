@@ -1,0 +1,17 @@
+{
+    "name": "bubbles",
+    "title": "Bubbel slider",
+    "description": "Afbeelding bubbels met evt. een popup",
+    "category": "br-image",
+    "icon": "ellipsis",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_bubbles"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

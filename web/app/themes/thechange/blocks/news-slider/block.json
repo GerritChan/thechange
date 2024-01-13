@@ -1,0 +1,17 @@
+{
+    "name": "news-slider",
+    "title": "Nieuws slider",
+    "description": "Toont al het laatste nieuws in een slider",
+    "category": "misc",
+    "icon": "slides",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_news_slider"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

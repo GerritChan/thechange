@@ -1,0 +1,219 @@
+section.news-slider{
+    overflow: hidden; 
+    
+    .top{
+        display: flex; 
+        width: 100%; 
+        justify-content: space-between;
+        align-items: center; 
+        padding-bottom: 15px; 
+    }
+     
+    .wrapper{
+        display: flex; 
+        justify-content: center; 
+        position: relative; 
+        .slide-left, 
+        .slide-right{
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            position: absolute;
+            top: 50%; 
+            border-radius: 50%; 
+            margin-top: -32.5px; 
+            width: 65px; 
+            height: 65px; 
+            background-color: #191D22;
+            z-index: 3; 
+            cursor: pointer; 
+            transition: all 0.2s;
+            &.hide{ opacity: 0.25; }
+            &:before{
+                content: '';
+                border-top: 3px solid #fff;
+            }
+        }
+        .slide-left{
+            left: 2.5vw;
+            transform: rotate(-45deg);
+            &:before{
+                border-left: 3px solid #fff; 
+                width: 20px; 
+                height: 20px;
+                margin-bottom: -5px; 
+                margin-right: -5px; 
+            }
+            &:hover{
+                transform: rotate(-45deg) translateX(-3px) translateY(-3px);
+            }
+        }
+        .slide-right{
+            right: 2.5vw;
+            transform: rotate(45deg);
+            &:before{
+                border-right: 3px solid #fff; 
+                width: 20px; 
+                height: 20px;
+                margin-bottom: -5px; 
+                margin-right: 5px;
+            }
+            &:hover{
+                transform: rotate(45deg) translateX(3px) translateY(-3px);
+            }
+        }
+    }
+
+    .slides{
+        display: flex; 
+        width: 100%;
+        overflow: visible; 
+        position: relative; 
+        z-index: 2; 
+        a.news-card{
+            display: flex;
+            align-items: center; 
+            transition: box-shadow 0.2s, opacity 0.4s; 
+            opacity: 1;
+            pointer-events: none; 
+            flex-shrink: 0;
+            width: 50%; 
+            position: relative;
+            aspect-ratio: 10/18;
+            picture{
+                display: flex; 
+                width: 100%; 
+                height: 100%; 
+                position: absolute; 
+                border-radius: 40px; 
+                overflow: hidden; 
+                transition: all 0.4s; 
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; 
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    top: 0px; 
+                    left: 0px; 
+                    width: 100%; 
+                    height: 100%; 
+                    background-color: rgba(255, 255, 255, 0);
+                    z-index: 2;
+                    border-radius: 40px; 
+                    overflow: hidden;  
+                    transition: all 0.4s;
+                }
+            }
+            .content{
+                position: absolute; 
+                z-index: 2;   
+                padding: 2.5vw; 
+                color: #fff; 
+                height: 100%; 
+                width: 100%; 
+                opacity: 0; 
+                transition: all 0.4s; 
+                border-radius: 40px; 
+                overflow: hidden; 
+            } 
+            &.active{
+                opacity: 1;
+                pointer-events: auto;  
+                picture{ 
+                    height: 80%; 
+                    &:after{
+                        background-color: rgba(85, 169, 50, 0.95);
+                    }
+                }
+                &:hover picture:after{
+                    background-color: rgba(85, 169, 50, 0.5);
+                    backdrop-filter: blur(2px);
+                }
+                .content{
+                    height: 80%; 
+                    opacity: 1; 
+                }
+                
+                & + a.news-card{ 
+                    picture{ 
+                        height: 60%; 
+                        &:after{
+                            background-color: rgba(4, 138, 187, 0.95);
+                        }
+                    } 
+                    .content{
+                        height: 60%; 
+                        opacity: 1; 
+                    }
+                }
+                & + a.news-card + a.news-card{ 
+                    picture{ 
+                        height: 80%; 
+                        &:after{
+                            background-color: rgba(246, 183, 46, 0.95);
+                        }
+                    }
+                    .content{
+                        height: 80%; 
+                        opacity: 1; 
+                    } 
+                }
+            }
+        }
+    }
+}
+
+.wp-block section.news-slider .slides a.news-card{
+    opacity: 1!important;
+    pointer-events: auto!important; 
+}
+
+@media screen and (max-width: 1500px){
+    section.news-slider{
+        .inner{
+            width: calc(100% / 14 * 12);
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    section.news-slider{
+        .slides{
+            a.news-card{
+                width: 100%; 
+                &.active + a.news-card{
+                    opacity: 0.25;
+                    pointer-events: none; 
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    section.news-slider{
+
+        .wrapper{
+            justify-content: flex-start;
+            padding-bottom: 30px; 
+            .slide-left, 
+            .slide-right{
+                bottom: -20px; 
+                top: auto; 
+                margin-top: 0px; 
+                width: 25px;
+                height: 25px; 
+                border-width: 6px;
+            }
+            .slide-left{ left: calc(50% - 50px); }
+            .slide-right{ right: calc(50% - 50px); }
+        }
+        .slides{
+            width: calc(100% - 25px);
+        }
+    }
+}
+

@@ -1,0 +1,96 @@
+// section.text-image.container {
+//    background: #0028560A;
+//    .text-image-wrapper {
+      
+//       display: flex;
+
+//       picture.image {
+//          display: flex;
+//          align-items: flex-start;
+
+//          img {
+//             width: 100%;
+//             height: auto;
+//          }
+//       }
+
+//       .spacer {
+//          min-width: 60px;
+//       }
+
+//       &.text-right{
+//          flex-direction: row-reverse;
+//       }
+
+//    }
+// }
+
+// section.text-image.container .text-image-wrapper {
+//    &.image-40{ 
+//       picture.image{ width: 40%; }
+//       .text-container{ width: 60%; }
+//    }
+//    &.image-50-overlap{ 
+//       picture.image{ width: 50%; }
+//       .text-container{ width: 70%; }
+//       .spacer{ min-width: 0px; }
+//       &.text-right picture.image{ margin-right: -20%; }
+//       &.text-left picture.image{ margin-left: -20%; }
+//    }
+//    &.image-50{ 
+//       picture.image{ width: 50%; }
+//       .text-container{ width: 50%; }
+//    }
+//    &.image-60{ 
+//       picture.image{ width: 60%; }
+//       .text-container{ width: 40%; }
+//    }
+// }
+
+// section.text-image.container .text-image-wrapper {
+//    &.text-top{ align-items: flex-start; }
+//    &.text-center{ align-items: center; }
+//    &.text-bottom{ align-items: flex-end; }
+// }
+
+
+// ._2-col {
+// grid-column-gap: 2rem;
+// grid-row-gap: 2rem;
+// display: flex;
+// }
+
+// ._2-col-50 {
+//    width: 50%;
+// }
+
+// .margin-bottom-medium {
+//    padding: 3rem;
+//    background: white;
+// }
+
+// .home-content-wrapper.is-2-col {
+//    grid-column-gap: 3rem;
+//    grid-row-gap: 3rem;
+//    grid-template-rows: auto auto;
+//    grid-template-columns: 1fr 1fr;
+//    grid-auto-columns: 1fr;
+//    padding: 0;
+//    display: flex;
+// }
+
+// .home-content-2-col {
+//    width: 50%;
+//    background-color: var(--white);
+//    flex-direction: column;
+//    padding: 3rem;
+//    display: flex;
+// }
+
+// .home-content-2-col-wrapper {
+//    height: 25rem;
+//    object-fit: cover;
+//    justify-content: center;
+//    display: flex;
+//    position: relative;
+// }

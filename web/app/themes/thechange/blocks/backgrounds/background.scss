@@ -1,0 +1,93 @@
+.backgrounds{
+    position: absolute; 
+    z-index: -1; 
+    display: flex; 
+    flex-direction: column; 
+    top: 0px; 
+    left: 0px; 
+    width: 100%; 
+    height: 100%;
+    padding-top: 130px;  
+    z-index: -1; 
+    overflow: hidden;
+    background-color: #f5f5f5;
+    .top-gradient{
+        display: flex; 
+        position: relative; 
+        min-height: calc( 140px + 43vw );
+        width: 100%;  
+        background: linear-gradient(180deg, #ffffff 0%, #f5f5f5 100%);   
+        &:after{
+            content: '';
+            position: absolute;
+            top: -130px;
+            height: 130px;
+            width: 100%;  
+            background-color: #fff; 
+        }
+    }
+    .top-pattern{
+        position: absolute; 
+        z-index: 2; 
+        top: 130px;
+        left: 0px; 
+        height: calc( 140px + 43vw );
+        width: 100%; 
+        img.background-pattern{
+            position: absolute; 
+            bottom: 60px;
+            left: -17%; 
+            width: 120%; 
+            opacity: 0.1;
+        }
+    }
+    .white-bg-bubbles{
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        margin-top: -20vw; 
+        svg:first-of-type{
+            width: 125%;
+            margin-left: 20%;  
+            height: auto;
+            transform: rotate(193deg);
+            margin-top: -5vw; 
+            margin-bottom: 20vw; 
+        }
+        svg:nth-of-type(2){
+            width: 125%;
+            height: auto; 
+            margin-left: -125%;
+        }
+        svg:nth-of-type(3){
+            width: 125%;
+            height: auto;
+            margin-left: 0%;
+        }
+    }
+}
+
+body.home{ 
+    .backgrounds .top-pattern{
+        img.background-pattern{
+            opacity: 0.33;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .backgrounds{
+        .top-pattern, 
+        .top-gradient{
+            height: 75vh;
+        }
+        .top-pattern{
+            img.background-pattern{
+                bottom: auto;
+                top: 100px;
+                left: 0px;
+                width: 1100px; 
+            }
+        }
+    }
+}

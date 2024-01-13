@@ -1,0 +1,110 @@
+/* #tinymce = Inside the tinymce editor */
+/* .mce-menu = The tinyMCE menu bar */ 
+/* section.container = front-end and backend */
+body section.container,
+body.front-end header,
+#tinymce,
+.mce-menu {
+    .cta-1,
+    .mce-i-br-cta-1 {
+        display: inline-block;
+        font-size: 25px; 
+        height: 60px; 
+        padding: 11px 80px 10px 30px;
+        background: linear-gradient(90deg,#f39e4c 0%, #d0e461 100%);
+        color: #fff; 
+        text-decoration: none; 
+        transition: background-color 0.2s;
+        border-radius: 30px;
+        -webkit-appearance: none; 
+        appearance: none;
+      
+        &:hover{
+            background-color: #55A932;
+        }
+        @media screen and (max-width: 600px){
+            font-size: 21px; 
+        }
+    }
+    .cta-2,
+    .mce-i-br-cta-2 {
+        display: inline-block;
+        font-size: 25px;
+        font-weight: 700;  
+        height: 60px; 
+        padding: 11px 30px 10px 30px;
+        color: #fff; 
+        background-color:#000;
+        text-decoration: none; 
+        transition: background-color 0.2s;
+        border-radius: 30px;
+        -webkit-appearance: none; 
+        appearance: none;
+        &:hover{
+            background-color: #55A932;
+        }
+        @media screen and (max-width: 600px){
+            font-size: 20px; 
+            height: 48px;
+            padding: 9px 24px 9px 24px;
+        }
+    }
+    .cta-3,
+    .mce-i-br-cta-3 {
+        display: inline-block;
+        font-size: 25px; 
+        height: 60px; 
+        padding: 11px 48px 10px 48px;
+        color: #000; 
+        background-color:#fff;
+        text-decoration: none; 
+        transition: all 0.2s;
+        border-radius: 30px;
+        -webkit-appearance: none; 
+        appearance: none;
+        box-shadow: 0px 0px 0px 2px #fff; 
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+p .cta{
+    margin: 6px 0px; 
+}
+
+
+/* Tinymce header bar styling */
+.mce-i-br-buttons{
+    display: none!important;
+    + span.mce-txt{
+        display: inline-block!important;
+        font-size: 16px!important;
+        font-weight: 700; 
+        line-height: 22px!important;
+    } 
+}
+
+
+/* Make sure the buttons looks normal in the editor */
+@for $i from 0 through 10 {
+    .mce-i-br-cta-#{$i} {
+        display: inline-block !important;
+        text-align: center!important;
+        padding: 0px!important;
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+        height: 42px !important;
+        line-height: 42px!important;
+        box-sizing: border-box !important;
+        width: calc(100% - 6px)!important;
+
+        &:before {
+            content: "Button";
+        }
+
+        & + span {
+            display: none;
+        }
+    }
+}

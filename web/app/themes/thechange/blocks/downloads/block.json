@@ -1,0 +1,17 @@
+{
+    "name": "downloads",
+    "title": "Downloads",
+    "description": "Blok voor het weergeven van downloads",
+    "category": "misc",
+    "icon": "arrow-down-alt2",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_downloads"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

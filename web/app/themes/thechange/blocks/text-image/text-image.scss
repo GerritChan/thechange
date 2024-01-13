@@ -1,0 +1,80 @@
+section.text-image.container {
+   .text-image-wrapper {
+      
+      display: flex;
+
+      picture.image {
+         display: flex;
+         align-items: flex-start;
+
+         img {
+            width: 100%;
+            height: auto;
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+         }
+      }
+
+      .spacer {
+         min-width: 60px;
+      }
+
+      &.text-right{
+         flex-direction: row-reverse;
+      }
+
+   }
+}
+
+section.text-image.container .text-image-wrapper {
+   &.image-40{ 
+      picture.image{ width: 40%; }
+      .text-container{ width: 60%; }
+   }
+   &.image-50-overlap{ 
+      picture.image{ width: 50%; }
+      .text-container{ width: 70%; }
+      .spacer{ min-width: 0px; }
+      &.text-right picture.image{ margin-right: -20%; }
+      &.text-left picture.image{ margin-left: -20%; }
+   }
+   &.image-50{ 
+      picture.image{ width: 50%; }
+      .text-container{ width: 50%; }
+   }
+   &.image-60{ 
+      picture.image{ width: 60%; }
+      .text-container{ width: 40%; }
+   }
+}
+
+section.text-image.container .text-image-wrapper {
+   &.text-top{ align-items: flex-start; }
+   &.text-center{ align-items: center; }
+   &.text-bottom{ align-items: flex-end; }
+}
+
+.mask-blob1 {
+-webkit-mask-image: url(https://business.virtuagym.com/mask/blob1.svg);
+    mask-image: url(https://business.virtuagym.com/mask/blob1.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.object-contain {
+   -o-object-fit: contain;
+   object-fit: contain;
+}
+
+.rounded-theme-lg {
+   border-radius: 80px;
+}
+
+img, video {
+   max-width: 100%;
+   height: auto;
+}

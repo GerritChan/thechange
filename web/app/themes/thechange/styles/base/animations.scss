@@ -1,0 +1,39 @@
+//fade in animations
+/* animate in the block */
+section.animate-in{
+  .inner-wide, 
+  .inner,
+  .inner-narrow, 
+  .hero-image-container,
+  .bubbles-slider,
+  .text-image-wrapper{
+      opacity: 0; 
+      transform: translateY(3vw);
+      @media screen and (max-width: 900px){
+          transform: translateY(30px);
+      }
+      transition: all 1.8s cubic-bezier(0.55, 0, 0.175, 1) 0s;
+      &.in-viewport{
+          opacity: 1; 
+          transform: translateY(0px);
+      }
+  }
+}
+
+.wp-block section.animate-in{
+  padding: 60px 0px; 
+  .inner-wide, 
+  .inner,
+  .inner-narrow, 
+  .inner-picture,
+  .word-slider-wrapper,
+  .hero-image-container,
+  .bubbles-slider,
+  .text-image-wrapper{
+      opacity: 1; 
+      transform: translateY(0px);
+      @media screen and (max-width: 900px){
+          transform: translateY(0px);
+      }
+  }
+}

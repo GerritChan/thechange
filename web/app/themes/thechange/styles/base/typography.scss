@@ -1,0 +1,132 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../styles/fonts/manrope-v15-latin-regular.woff2') format('woff2'),
+}
+@font-face {
+    font-display: swap; 
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../styles/fonts/manrope-v15-latin-700.woff2') format('woff2'),
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Fugaz One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../styles/fonts/fugaz-one-v19-latin-regular.woff2') format('woff2'),
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Sofia Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../styles/fonts/sofia-sans-v16-latin-regular.woff2') format('woff2'),
+}
+@font-face {
+    font-display: swap;
+    font-family: 'multi-display, sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../styles/fonts/multiDisplay-Regular.woff2') format('woff2'),
+}
+
+
+// @font-face {
+//     font-display: swap;
+//     font-family: 'Anton';
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../styles/fonts/fugaz-one-v19-latin-regular.woff2') format('woff2'),
+// }
+
+body.front-end, 
+section.container, 
+#tinymce{ 
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #191D22;
+
+    p, h1, h2, h3, h4, h5, h6{
+        margin: 0px; 
+    }
+
+    p strong, strong p{
+        font-size: 20px; 
+        font-weight: 700;
+    }
+
+    h1{
+        font-size: calc(47px + 3vw); 
+        font-family: 'multi-display, sans-serif';
+        line-height: 1.1;
+
+        @media screen and (max-width: 600px){
+            font-size: calc(36px + 2vw); 
+        }
+    }
+
+    h2{
+        // font-size: calc(36px + 2vw); 
+        // line-height: 1.2;
+        font-size: 36px;
+        color: rgb(60 23 56);
+    line-height: 40px;
+        font-family: 'multi-display, sans-serif';
+        font-weight: 400; 
+        @media screen and (max-width: 600px){
+            font-size: calc(30px + 1.75vw); 
+        }
+    }
+
+    h3{
+        font-size: 36px;
+        line-height: 40px;
+        color: rgb(60 23 56);
+        font-family: 'multi-display, sans-serif';
+        @media screen and (max-width: 600px){
+            font-size: 32px;   
+        }
+    }
+
+    h4{
+        font-size: 38px; 
+        line-height: 1.25;
+        font-weight: 400;
+        @media screen and (max-width: 600px){
+            font-size: 29px; 
+        }
+    }
+
+    h5{
+        font-size: 30px; 
+        font-weight: 700;
+        @media screen and (max-width: 600px){
+            font-size: 26px; 
+        }
+    }
+
+    h6{
+        font-size: 26px; 
+        font-weight: 400; 
+    }
+
+    ul, ol{
+        padding-left: 20px; 
+    }
+
+    
+    /* How to handle spacing in text */
+    p.space{
+        min-height: 28px; height: 28px; 
+        & + p.space{
+            @media (max-width: 500px) {
+               min-height: 14px; height: 14px; 
+            }
+        }
+    }
+}

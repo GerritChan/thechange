@@ -1,4 +1,4 @@
-<section class="text-image bg-primary container animate-in">
+<section class="text-image <?= $fields['bg_color']; ?> container animate-in">
    <div class="inner">
 
       <div class="text-image-wrapper <?= $fields['image_position']; ?> <?= $fields['text_alignment']; ?> <?= $fields['image_width']; ?>">

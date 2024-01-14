@@ -3,7 +3,14 @@
   font-family: "Glacial";
   font-style: normal;
   font-weight: 400;
-  src: url("../styles/fonts/glacial.woff2") format("woff2");
+  src: url("../styles/fonts/nunito-400.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Glacial";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../styles/fonts/nunito-700.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
@@ -27,7 +34,7 @@ body.front-end p strong, body.front-end strong p, section.container p strong, se
   font-weight: 700;
 }
 body.front-end h1, section.container h1, #tinymce h1 {
-  font-size: calc(47px + 3vw);
+  font-size: calc(72px + 3vw);
   line-height: 1.1;
 }
 @media screen and (max-width: 600px) {
@@ -36,7 +43,7 @@ body.front-end h1, section.container h1, #tinymce h1 {
   }
 }
 body.front-end h2, section.container h2, #tinymce h2 {
-  font-size: calc(36px + 2vw);
+  font-size: calc(48px + 2vw);
   line-height: 1.2;
 }
 @media screen and (max-width: 600px) {
@@ -45,7 +52,7 @@ body.front-end h2, section.container h2, #tinymce h2 {
   }
 }
 body.front-end h3, section.container h3, #tinymce h3 {
-  font-size: 36px;
+  font-size: 48px;
   line-height: 40px;
 }
 @media screen and (max-width: 600px) {
@@ -2955,8 +2962,8 @@ section.text-image-header.container .mask2 {
   top: 0px;
   width: 45%;
   max-width: 1200px;
-  -webkit-mask-image: url("../img/masker2.png");
-  mask-image: url("../img/masker2.png");
+  -webkit-mask-image: url("../img/blob2.svg");
+  mask-image: url("../img/blob2.svg");
   -webkit-mask-size: cover;
   mask-size: cover;
   -webkit-mask-repeat: no-repeat;

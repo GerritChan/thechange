@@ -42,7 +42,7 @@ add_filter('script_loader_tag', function ($url) {
 
 /* Change hyperlink for login logo */
 add_filter( 'login_headerurl', function(){
-    return "https://bredewold.nl"; 
+    return "https://thechange-leefstijl.nl"; 
 });
 
 /* Enable svg for upload */

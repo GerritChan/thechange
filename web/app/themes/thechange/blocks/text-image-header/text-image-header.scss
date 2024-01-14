@@ -14,12 +14,16 @@ section.text-image-header.container {
 
    .inner {
       display: flex;
-      padding-top: 200px;
       height: 100%;
       z-index: 1;
       @media screen and (max-width: 1500px) {
          width: calc(100% / 14 * 12);
       }
+   }
+
+   h1 {
+      width: 90%;
+      word-break: break-word;
    }
 
    .text-image-wrapper {
@@ -40,8 +44,8 @@ section.text-image-header.container {
       display: flex;
       align-items: flex-start;
       position: absolute; 
-      right: 0px; 
-      top: 0px; 
+      right: -55px; 
+      top: -40px; 
       width: 45%;
       max-width: 1200px;
       -webkit-mask-image: url('../img/blob2.svg');

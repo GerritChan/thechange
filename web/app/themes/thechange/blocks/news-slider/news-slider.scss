@@ -24,21 +24,21 @@ section.news-slider{
             margin-top: -32.5px; 
             width: 65px; 
             height: 65px; 
-            background-color: #191D22;
+            background-color: #f8f8f8;
             z-index: 3; 
             cursor: pointer; 
             transition: all 0.2s;
             &.hide{ opacity: 0.25; }
             &:before{
                 content: '';
-                border-top: 3px solid #fff;
+                border-top: 3px solid #000;
             }
         }
         .slide-left{
-            left: 2.5vw;
+            left: -2.5vw;
             transform: rotate(-45deg);
             &:before{
-                border-left: 3px solid #fff; 
+                border-left: 3px solid #000; 
                 width: 20px; 
                 height: 20px;
                 margin-bottom: -5px; 
@@ -49,10 +49,10 @@ section.news-slider{
             }
         }
         .slide-right{
-            right: 2.5vw;
+            right: -2.5vw;
             transform: rotate(45deg);
             &:before{
-                border-right: 3px solid #fff; 
+                border-right: 3px solid #000; 
                 width: 20px; 
                 height: 20px;
                 margin-bottom: -5px; 
@@ -70,98 +70,35 @@ section.news-slider{
         overflow: visible; 
         position: relative; 
         z-index: 2; 
-        a.news-card{
+        div.news-card{
             display: flex;
             align-items: center; 
             transition: box-shadow 0.2s, opacity 0.4s; 
             opacity: 1;
             pointer-events: none; 
             flex-shrink: 0;
+            border-radius: 24px;
             width: 50%; 
             position: relative;
-            aspect-ratio: 10/18;
-            picture{
-                display: flex; 
-                width: 100%; 
-                height: 100%; 
-                position: absolute; 
-                border-radius: 40px; 
-                overflow: hidden; 
-                transition: all 0.4s; 
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover; 
-                }
-                &:after{
-                    content: '';
-                    position: absolute;
-                    top: 0px; 
-                    left: 0px; 
-                    width: 100%; 
-                    height: 100%; 
-                    background-color: rgba(255, 255, 255, 0);
-                    z-index: 2;
-                    border-radius: 40px; 
-                    overflow: hidden;  
-                    transition: all 0.4s;
-                }
-            }
+            background-color: #191D22;
             .content{
-                position: absolute; 
+                position: relative; 
                 z-index: 2;   
                 padding: 2.5vw; 
                 color: #fff; 
                 height: 100%; 
                 width: 100%; 
-                opacity: 0; 
+                opacity: 1; 
                 transition: all 0.4s; 
                 border-radius: 40px; 
                 overflow: hidden; 
+                h5{
+                    margin-bottom: 10px; 
+                }
             } 
-            &.active{
-                opacity: 1;
-                pointer-events: auto;  
-                picture{ 
-                    height: 80%; 
-                    &:after{
-                        background-color: rgba(85, 169, 50, 0.95);
-                    }
-                }
-                &:hover picture:after{
-                    background-color: rgba(85, 169, 50, 0.5);
-                    backdrop-filter: blur(2px);
-                }
-                .content{
-                    height: 80%; 
-                    opacity: 1; 
-                }
-                
-                & + a.news-card{ 
-                    picture{ 
-                        height: 60%; 
-                        &:after{
-                            background-color: rgba(4, 138, 187, 0.95);
-                        }
-                    } 
-                    .content{
-                        height: 60%; 
-                        opacity: 1; 
-                    }
-                }
-                & + a.news-card + a.news-card{ 
-                    picture{ 
-                        height: 80%; 
-                        &:after{
-                            background-color: rgba(246, 183, 46, 0.95);
-                        }
-                    }
-                    .content{
-                        height: 80%; 
-                        opacity: 1; 
-                    } 
-                }
-            }
+            &:nth-of-type(3n + 3){ background-color: #d0e461; }
+            &:nth-of-type(3n + 2){ background-color: #f39e4c; }
+            &:nth-of-type(3n + 1){ background-color: #84bfd4; }
         }
     }
 }

@@ -1515,7 +1515,7 @@ body.front-end header {
   z-index: 11;
   width: 100%;
   color: #241B11;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
   transition: transform 0.6s ease-in-out 0s, background-color 0s ease 0s, height 0.6s ease 0s, box-shadow 0.6s ease 0s;
 }
@@ -1530,9 +1530,6 @@ body.front-end header .inner-wide a.logo svg {
 }
 body.front-end header .inner-wide a.cta-1 {
   margin-left: 20px;
-}
-body.front-end header.top {
-  background-color: #fff;
 }
 body.front-end header.not-top {
   background-color: #fff;
@@ -1584,8 +1581,9 @@ body.front-end header nav.desktop-menu ul li a {
   padding: 20px 15px;
   color: inherit;
   text-decoration: none;
-  font-size: 24px;
-  transition: all 0.8s;
+  font-size: calc(10px + 0.75vw);
+  font-weight: 700;
+  transition: all 0.4s;
 }
 body.front-end header nav.desktop-menu ul li a:after {
   content: "";
@@ -1662,6 +1660,12 @@ body.front-end header nav.desktop-menu ul li.menu-item-has-children:hover ul {
 }
 body.front-end header .mobile-menu-trigger {
   display: none;
+}
+body.front-end header.top.white ul li a {
+  color: #fff !important;
+}
+body.front-end header.top.white .sub-menu a {
+  color: #000 !important;
 }
 header.loading nav.desktop-menu ul li.menu-item-has-children ul.sub-menu {
   opacity: 0 !important;
@@ -1767,7 +1771,7 @@ header.loading nav.desktop-menu ul li.menu-item-has-children ul.sub-menu {
   transition: transform 0.4s, width 0.4s, opacity 0.3s, background-color 0.4s;
 }
 .mobile-menu-trigger--close .hamburger-menu span {
-  background-color: #000;
+  background-color: #000 !important;
 }
 .mobile-menu-trigger--close .hamburger-menu span:nth-of-type(1) {
   transform: rotate(45deg) translate3d(8px, 3px, 0);
@@ -1779,6 +1783,9 @@ header.loading nav.desktop-menu ul li.menu-item-has-children ul.sub-menu {
 .mobile-menu-trigger--close .hamburger-menu span:nth-of-type(3) {
   transform: rotate(-45deg) translate3d(8px, -3px, 0);
   width: 100%;
+}
+.top.white .hamburger-menu span {
+  background-color: #fff;
 }
 .mobile-menu-bg {
   display: flex;
@@ -2349,6 +2356,7 @@ section.header-bubble.container .article-slider a.slide .inner-slide {
   overflow: hidden;
   padding: 0px;
   padding-top: 0px !important;
+  margin-top: -130px;
 }
 .header-image.container .inner-wide {
   position: relative;

@@ -20,11 +20,6 @@ web/app/upgrade/*
 web/wp
 web/wp/*
 web/app/debug.log
-web/app/themes/thechange/build/theme-dev.css
-web/app/themes/thechange/build/theme-dev.css.map
-web/app/themes/thechange/build/theme-dev.js
-web/app/themes/thechange/build/theme.css
-web/app/themes/thechange/build/theme.js
 .DS_Store
 .vscode
 .vscode/*

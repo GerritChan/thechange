@@ -3,7 +3,7 @@
         
         <div class="top">
             <div class="left">
-                <h2>Anderen over Cynthia</h2>
+                <h2><?= $fields['text']; ?></h2>
             </div>
         </div>
 
@@ -11,15 +11,14 @@
             <div class="slide-left hide"></div>
 
             <div class="slides keen-slider">
-                <?php foreach ($news_items as $item) {
-                    $cropper = new Cropper($item['id']);
+                <?php foreach ($fields['reviews'] as $review) {
                     ?> 
                     
-                    <div class="news-card" href="<?= $item['permalink']; ?>">
+                    <div class="news-card">
                         
                         <div class="content">
-                            <h5><?= $item['title']; ?></h5>
-                            <p>Ooit was ik ruim 30 kilo te zwaar en at ik meer patat dan goed voor me was. Niet omdat ik dit wilde, maar omdat ik er simpelweg geen weerstand tegen kon bieden.<?= $item['excerpt']; ?></p> 
+                            <h5><?= $review['name']; ?></h5>
+                            <?= $review['text']; ?>
                         </div>
     
                     </div>

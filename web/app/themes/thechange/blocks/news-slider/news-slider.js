@@ -47,8 +47,8 @@ jQuery(document).ready(function(){
                 },
                 "(max-width: 800px)": {
                     slides: {
-                        perView: 1,
-                        spacing: 25
+                        perView: 1.1,
+                        spacing: 10
                     }
                 }
             }

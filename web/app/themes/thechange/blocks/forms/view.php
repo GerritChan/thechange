@@ -1,4 +1,4 @@
-<section class="form container bg-primary">
+<section class="form container bg-secondary">
    <div class="inner-narrow">
 
       <div class="form-container">

@@ -1,0 +1,25 @@
+{
+    "name": "text-blocks-3",
+    "title": "Tekst blokken",
+    "description": "3 gele blokken met tekst",
+    "category": "cards",
+    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 256 256\" xml:space=\"preserve\"><path d=\"M181.4 95.7H246v64.6h-64.6zM95.7 95.7h64.6v64.6H95.7zM10 95.7h64.6v64.6H10z\"/></svg>",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_text_blocks_3"
+    },
+    "example": {
+        "attributes": {
+            "mode": "preview",
+            "data": {
+                "is_example" : "yes"
+            }
+        }
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

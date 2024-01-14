@@ -1,7 +1,7 @@
 {
     "name": "news-slider",
-    "title": "Nieuws slider",
-    "description": "Toont al het laatste nieuws in een slider",
+    "title": "Reviews slider",
+    "description": "Toon reviews in een slider",
     "category": "misc",
     "icon": "slides",
     "acf": {

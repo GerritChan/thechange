@@ -6,24 +6,35 @@ section.text-image.container {
       picture.image {
          display: flex;
          align-items: flex-start;
+         -webkit-mask-image: url('../img/blob2.svg');
+         mask-image: url('../img/blob2.svg');
+         -webkit-mask-size: contain;
+         mask-size: contain;
+         -webkit-mask-repeat: no-repeat;
+         mask-repeat: no-repeat;
+         -webkit-mask-position: center;
+         mask-position: center;
 
          img {
             width: 100%;
             height: auto;
-            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
-            mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
          }
       }
 
       .spacer {
-         min-width: 60px;
+         min-width: 10vw;
       }
 
       &.text-right{
          flex-direction: row-reverse;
+         picture.image{
+            -webkit-mask-image: url('../img/blob1.svg');
+            mask-image: url('../img/blob1.svg');
+         }
       }
 
    }
+
 }
 
 section.text-image.container .text-image-wrapper {

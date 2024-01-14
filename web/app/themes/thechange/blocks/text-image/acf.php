@@ -55,9 +55,9 @@ $block->addRadio('bg_color', [
 
 ->addField('image', 'image_aspect_ratio_crop', [
   'label' => 'Afbeelding',
-  'crop_type' => 'free_crop',
-  //'aspect_ratio_width' => '500',
-  //'aspect_ratio_height' => '500',
+  'crop_type' => 'aspect_ratio',
+   'aspect_ratio_width' => 800,
+   'aspect_ratio_height' => 800,
   'return_format' => 'array',
   'preview_size' => 'medium',
   'wrapper' => [

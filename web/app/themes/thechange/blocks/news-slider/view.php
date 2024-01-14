@@ -15,39 +15,17 @@
                     $cropper = new Cropper($item['id']);
                     ?> 
                     
-                    <a class="news-card" href="<?= $item['permalink']; ?>">
+                    <div class="news-card" href="<?= $item['permalink']; ?>">
                         
-                        <picture>
-                            <source srcset="<?= $cropper->resize($item['image'], 720, '', 'webp'); ?>" type="image/webp"/>
-                            <img src="<?= $cropper->resize($item['image'], 720); ?>" alt="<?= $item['title']; ?>" loading="lazy"/>
-                        </picture>
                         <div class="content">
                             <h5><?= $item['title']; ?></h5>
-                            <p><?= $item['excerpt']; ?></p> 
+                            <p>Ooit was ik ruim 30 kilo te zwaar en at ik meer patat dan goed voor me was. Niet omdat ik dit wilde, maar omdat ik er simpelweg geen weerstand tegen kon bieden.<?= $item['excerpt']; ?></p> 
                         </div>
-                    
-                    </a>
+    
+                    </div>
 
                 <?php } ?>
 
-                <?php foreach ($news_items as $item) {
-                    $cropper = new Cropper($item['id']);
-                    ?> 
-                    
-                    <a class="news-card" href="<?= $item['permalink']; ?>">
-                        
-                        <picture>
-                            <source srcset="<?= $cropper->resize($item['image'], 720, '', 'webp'); ?>" type="image/webp"/>
-                            <img src="<?= $cropper->resize($item['image'], 720); ?>" alt="<?= $item['title']; ?>" loading="lazy"/>
-                        </picture>
-                        <div class="content">
-                            <h5><?= $item['title']; ?></h5>
-                            <p><?= $item['excerpt']; ?></p> 
-                        </div>
-                    
-                    </a>
-                    
-                <?php } ?>
             </div>
 
             <div class="slide-right"></div>
@@ -55,11 +33,3 @@
 
     </div>
 </section>
-
-
-<div class="wave-bottom relative w-full">
-    <svg preserveAspectRatio="none" viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1440 51.5254C1440 51.5254 1164.44 115.593 720 51.5254C275.556 -12.5424 0 51.5254 0 51.5254V0H1440V51.5254Z" fill="#F8F8F8"></path>
-</svg>
-
-  </div>

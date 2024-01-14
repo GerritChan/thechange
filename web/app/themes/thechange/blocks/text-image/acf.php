@@ -2,16 +2,16 @@
 /* https://github.com/Log1x/acf-builder-cheatsheet */
 
 
-$block->addRadio('background', [
-  'label' => 'Achtergrond instellen',
+$block->addRadio('bg_color', [
+  'label' => 'Achtergrondkleur',
   'choices' => [
-    'on' => 'Aan',
-    'off' => 'Uit',
+    'bg-primary' => 'Wit',
+    'bg-secondary' => 'Lichtgrijs',
   ],
-  'default_value' => ['off'],
   'wrapper' => [
-    'width' => 100
-  ]
+    'width' => '50',
+  ],
+  'default_value' => 'bg-primary',
 ])
 
 ->addRadio('image_position', [

@@ -1,16 +1,9 @@
 @font-face {
     font-display: swap;
-    font-family: 'Manrope';
+    font-family: 'Glacial';
     font-style: normal;
     font-weight: 400;
-    src: url('../styles/fonts/manrope-v15-latin-regular.woff2') format('woff2'),
-}
-@font-face {
-    font-display: swap; 
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    src: url('../styles/fonts/manrope-v15-latin-700.woff2') format('woff2'),
+    src: url('../styles/fonts/GlacialIndifference-Regular.woff2') format('woff2'),
 }
 @font-face {
     font-display: swap;
@@ -19,34 +12,13 @@
     font-weight: 400;
     src: url('../styles/fonts/fugaz-one-v19-latin-regular.woff2') format('woff2'),
 }
-@font-face {
-    font-display: swap;
-    font-family: 'Sofia Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../styles/fonts/sofia-sans-v16-latin-regular.woff2') format('woff2'),
-}
-@font-face {
-    font-display: swap;
-    font-family: 'multi-display, sans-serif';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../styles/fonts/multiDisplay-Regular.woff2') format('woff2'),
-}
 
 
-// @font-face {
-//     font-display: swap;
-//     font-family: 'Anton';
-//     font-style: normal;
-//     font-weight: 400;
-//     src: url('../styles/fonts/fugaz-one-v19-latin-regular.woff2') format('woff2'),
-// }
 
 body.front-end, 
 section.container, 
 #tinymce{ 
-    font-family: 'Sofia Sans', sans-serif;
+    font-family: 'Glacial', sans-serif;
     font-size: 20px;
     line-height: 1.4;
     color: #191D22;
@@ -62,7 +34,6 @@ section.container,
 
     h1{
         font-size: calc(47px + 3vw); 
-        font-family: 'multi-display, sans-serif';
         line-height: 1.1;
 
         @media screen and (max-width: 600px){
@@ -71,13 +42,8 @@ section.container,
     }
 
     h2{
-        // font-size: calc(36px + 2vw); 
-        // line-height: 1.2;
-        font-size: 36px;
-        color: rgb(60 23 56);
-    line-height: 40px;
-        font-family: 'multi-display, sans-serif';
-        font-weight: 400; 
+        font-size: calc(36px + 2vw); 
+        line-height: 1.2;
         @media screen and (max-width: 600px){
             font-size: calc(30px + 1.75vw); 
         }
@@ -86,8 +52,6 @@ section.container,
     h3{
         font-size: 36px;
         line-height: 40px;
-        color: rgb(60 23 56);
-        font-family: 'multi-display, sans-serif';
         @media screen and (max-width: 600px){
             font-size: 32px;   
         }

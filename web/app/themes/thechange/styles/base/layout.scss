@@ -64,9 +64,15 @@ section.container {
 }
 
 /* Styling for the WordPress backend */
+/* Styling for the WordPress backend */
 .wp-block{
-    width: 90%!important;
-    max-width: 90%!important;
+    width: calc(100% - 80px)!important;
+    max-width: calc(100% - 80px)!important;
+}
+
+.acf-block-preview{
+    border: 1px solid #adb2ad;
+    border-radius: 6px; 
 }
 
 section.container.bg-primary + .bg-primary{

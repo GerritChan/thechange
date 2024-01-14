@@ -4,7 +4,7 @@
     align-items: center; 
     padding-top: 120px;
     background-color: white; 
-    color: #00000; 
+    color: #000000; 
     border-top: 1px solid lightgrey;
 
     .inner-wide.top{
@@ -12,6 +12,11 @@
         align-items: center; 
         justify-content: space-between; 
         padding-bottom: 60px; 
+
+        a{
+            max-width: 100%; 
+            svg{ max-width: 100%; }
+        }
      
         .socials{
             display: flex; 

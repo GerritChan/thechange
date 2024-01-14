@@ -1026,7 +1026,7 @@ section.downloads .text-wrapper .menu-column div.menu-hotlink:hover {
   align-items: center;
   padding-top: 120px;
   background-color: white;
-  color: #00000;
+  color: #000000;
   border-top: 1px solid lightgrey;
 }
 .front-end section.footer .inner-wide.top {
@@ -1034,6 +1034,12 @@ section.downloads .text-wrapper .menu-column div.menu-hotlink:hover {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 60px;
+}
+.front-end section.footer .inner-wide.top a {
+  max-width: 100%;
+}
+.front-end section.footer .inner-wide.top a svg {
+  max-width: 100%;
 }
 .front-end section.footer .inner-wide.top .socials {
   display: flex;

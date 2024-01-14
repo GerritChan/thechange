@@ -5,9 +5,9 @@
               </div>
               
 <section class="text container bg-primary animate-in">
-   <div class="<?= $fields['width']; ?>">
-        
-      <?= $fields['text']; ?> 
 
+   <div class="<?= $fields['width']; ?>">  
+      <?= $fields['text']; ?> 
    </div>
+
 </section>

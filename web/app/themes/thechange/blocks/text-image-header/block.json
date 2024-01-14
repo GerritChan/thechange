@@ -1,0 +1,17 @@
+{
+    "name": "text-image-header",
+    "title": "Tekst met geruite afbeelding",
+    "description": "Veld voor tekst met een afbeelding in de header",
+    "category": "br-text-image",
+    "icon": "align-pull-right",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_text_image_header"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "header-image",
+    "title": "Header afbeelding",
+    "description": "Header afbeelding",
+    "category": "br-image",
+    "icon": "cover-image",
+    "acf": {
+        "mode": "preview",
+        "renderCallback": "render_header_image"
+    },
+    "supports": {
+        "align": false,
+        "customClassName": true,
+        "multiple": true,
+        "reusable": true
+    }
+}

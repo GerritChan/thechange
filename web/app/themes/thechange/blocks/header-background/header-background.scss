@@ -413,6 +413,9 @@
 //     }
 // }
 
+body.front-end, 
+section.container, 
+#tinymce{ 
 .hero-alt {
     z-index: -1;
     width: 50%;
@@ -480,4 +483,5 @@ p {
     margin-bottom: 100px;
     padding-top: 100px;
     position: relative;
+}
 }

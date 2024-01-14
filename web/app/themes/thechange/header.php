@@ -3,9 +3,7 @@
 	<head>
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="preload" href="<?= get_template_directory_uri(); ?>/styles/fonts/oscine-400.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="<?= get_template_directory_uri(); ?>/styles/fonts/oscine-700.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="<?= get_template_directory_uri(); ?>/styles/fonts/oscine-800.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="<?= get_template_directory_uri(); ?>styles/fonts/glacialindifference-regular.woff2" as="font" type="font/woff2" crossorigin>
 		<?php wp_head(); ?>
 	</head>
 

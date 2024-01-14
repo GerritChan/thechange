@@ -17,23 +17,4 @@ $block->addWysiwyg('Tekst', [
 
 ->addTextarea('Cta tekst', [
   'name' => 'cta_text'
-])
-
-->addRelationship('posts', [
-  'label' => 'Toon blog/nieuws',
-  'instructions' => '',
-  'required' => 0,
-  'conditional_logic' => [],
-  'wrapper' => [
-      'width' => '',
-      'class' => '',
-      'id' => '',
-  ],
-  'post_type' => ['blog', 'post'],
-  'filters' => [
-      0 => 'search',
-      1 => 'post_type',
-      2 => 'taxonomy',
-  ],
-  'return_format' => 'id'
 ]);

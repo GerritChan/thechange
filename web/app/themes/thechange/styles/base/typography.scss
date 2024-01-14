@@ -3,7 +3,14 @@
     font-family: 'Glacial';
     font-style: normal;
     font-weight: 400;
-    src: url('../styles/fonts/glacial.woff2') format('woff2'),
+    src: url('../styles/fonts/nunito-400.woff2') format('woff2'),
+}
+@font-face {
+    font-display: swap;
+    font-family: 'Glacial';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../styles/fonts/nunito-700.woff2') format('woff2'),
 }
 @font-face {
     font-display: swap;
@@ -33,7 +40,7 @@ section.container,
     }
 
     h1{
-        font-size: calc(47px + 3vw); 
+        font-size: calc(72px + 3vw); 
         line-height: 1.1;
 
         @media screen and (max-width: 600px){
@@ -42,7 +49,7 @@ section.container,
     }
 
     h2{
-        font-size: calc(36px + 2vw); 
+        font-size: calc(48px + 2vw); 
         line-height: 1.2;
         @media screen and (max-width: 600px){
             font-size: calc(30px + 1.75vw); 
@@ -50,7 +57,7 @@ section.container,
     }
 
     h3{
-        font-size: 36px;
+        font-size: 48px;
         line-height: 40px;
         @media screen and (max-width: 600px){
             font-size: 32px;   

@@ -166,10 +166,11 @@ body.front-end header{
       ul li 
          a{ 
             color: #fff!important; 
-            text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+            text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
          }
          .sub-menu a{
             color: #000!important; 
+            text-shadow: none; 
          }
     }
 }

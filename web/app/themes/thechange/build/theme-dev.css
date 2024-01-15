@@ -1666,10 +1666,11 @@ body.front-end header .mobile-menu-trigger {
 }
 body.front-end header.top.white ul li a {
   color: #fff !important;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
 }
 body.front-end header.top.white .sub-menu a {
   color: #000 !important;
+  text-shadow: none;
 }
 header.loading nav.desktop-menu ul li.menu-item-has-children ul.sub-menu {
   opacity: 0 !important;

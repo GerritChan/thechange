@@ -29,8 +29,4 @@ $block->addWysiwyg('Tekst', [
    'wrapper' => [
       'width' => 30
    ]
-])
-
-->addTrueFalse('scroll_arrow', [
-   'label' => 'Toon scroll pijltje'
-]);
+   ]);

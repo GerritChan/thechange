@@ -27,7 +27,6 @@ if (WP_ENV == 'development') {
 
         $phpmailer->SMTPAuth = true;
         $phpmailer->Username = 'apikey';
-        $phpmailer->Password = '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';
     });
 }
 

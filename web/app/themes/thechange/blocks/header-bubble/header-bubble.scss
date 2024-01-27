@@ -23,13 +23,12 @@ section.header-bubble.container{
     }
 
     p {
-        width: 60%;
+        width: 100%;
     }
     .text{
         position: absolute; 
         top: 20.5vw;
-        left: 8vw;
-        max-width: 60%;
+        max-width: 55%;
         color: #fff; 
         form.search-anywhere{
             svg{ *{ fill: #fff; } }

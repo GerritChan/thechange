@@ -2016,13 +2016,12 @@ section.header-bubble.container h1 {
   font-weight: 700;
 }
 section.header-bubble.container p {
-  width: 60%;
+  width: 100%;
 }
 section.header-bubble.container .text {
   position: absolute;
   top: 20.5vw;
-  left: 8vw;
-  max-width: 60%;
+  max-width: 55%;
   color: #fff;
 }
 section.header-bubble.container .text form.search-anywhere svg * {
@@ -2888,28 +2887,17 @@ section.text-image.container .text-image-wrapper {
 section.text-image.container .text-image-wrapper picture.image {
   display: flex;
   align-items: flex-start;
-  -webkit-mask-image: url("../img/blob2.svg");
-  mask-image: url("../img/blob2.svg");
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
 }
 section.text-image.container .text-image-wrapper picture.image img {
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 section.text-image.container .text-image-wrapper .spacer {
   min-width: 10vw;
 }
 section.text-image.container .text-image-wrapper.text-right {
   flex-direction: row-reverse;
-}
-section.text-image.container .text-image-wrapper.text-right picture.image {
-  -webkit-mask-image: url("../img/blob1.svg");
-  mask-image: url("../img/blob1.svg");
 }
 section.text-image.container .text-image-wrapper.image-40 picture.image {
   width: 40%;
@@ -2995,6 +2983,7 @@ section.text-image-header.container {
 }
 section.text-image-header.container .inner {
   display: flex;
+  padding-top: 100px;
   height: 100%;
   z-index: 1;
 }
@@ -3096,4 +3085,4 @@ section.text-image-header.container .mask2 picture.image img {
     mask-image: none;
   }
 }
-/*# sourceMappingURL=http://127.0.0.1/thechange/app/themes/thechange/build/theme-dev.css.map */
+/*# sourceMappingURL=http://localhost:8888/thechange/app/themes/thechange/build/theme-dev.css.map */

@@ -49,12 +49,6 @@ section.text-image-header.container {
       top: -40px; 
       width: 45%;
       max-width: 1200px;
-      -webkit-mask-image: url('../img/blob2.svg');
-      mask-image: url('../img/blob2.svg');
-      -webkit-mask-size: cover;
-      mask-size: cover;
-      -webkit-mask-repeat: no-repeat;
-      mask-repeat: no-repeat;
       background-color: #fff;
       margin-top: -0.9vw;
       margin-right: -0.9vw;
@@ -63,16 +57,11 @@ section.text-image-header.container {
          display: flex;
          align-items: flex-start;
          width: 100%;
-        /* -webkit-mask-image: url('../img/header-mask.webp');
-         mask-image: url('../img/header-mask.webp');
-         -webkit-mask-size: cover;
-         mask-size: cover;
-         -webkit-mask-repeat: no-repeat;
-         mask-repeat: no-repeat;*/
 
          img {
             width: 100%;
             height: auto;
+            border-radius: 50%;
          }
       }
    }

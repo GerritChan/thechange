@@ -2787,6 +2787,7 @@ section.text-blocks-3 {
 }
 section.text-blocks-3 .inner {
   min-width: 900px;
+  width: calc(100% / 14 * 12);
 }
 section.text-blocks-3 .text-block-wrapper {
   display: grid;
@@ -3020,12 +3021,6 @@ section.text-image-header.container .mask2 {
   top: -40px;
   width: 45%;
   max-width: 1200px;
-  -webkit-mask-image: url("../img/blob2.svg");
-  mask-image: url("../img/blob2.svg");
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
   background-color: #fff;
   margin-top: -0.9vw;
   margin-right: -0.9vw;
@@ -3034,16 +3029,11 @@ section.text-image-header.container .mask2 picture.image {
   display: flex;
   align-items: flex-start;
   width: 100%;
-  /* -webkit-mask-image: url('../img/header-mask.webp');
-         mask-image: url('../img/header-mask.webp');
-         -webkit-mask-size: cover;
-         mask-size: cover;
-         -webkit-mask-repeat: no-repeat;
-         mask-repeat: no-repeat;*/
 }
 section.text-image-header.container .mask2 picture.image img {
   width: 100%;
   height: auto;
+  border-radius: 50%;
 }
 .wp-block .section.text-image-header.container {
   margin-bottom: 0px;

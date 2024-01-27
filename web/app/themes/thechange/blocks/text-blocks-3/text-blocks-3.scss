@@ -2,6 +2,7 @@ section.text-blocks-3{
     position: relative; 
     .inner{
         min-width: 900px; 
+        width: calc(100% / 14 * 12);
     }
     .text-block-wrapper{
         display: grid;  
